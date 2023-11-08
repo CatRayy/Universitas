@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Universitas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Universitas SukaSuka</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Daftar Mata Kuliah</h2>
+            <ul id="mataKuliahList">
+                <!-- Daftar mata kuliah akan ditampilkan di sini -->
+            </ul>
+
+            <h2>Daftar Mahasiswa</h2>
+            <ul id="mahasiswaList">
+                <!-- Daftar mahasiswa akan ditampilkan di sini -->
+            </ul>
+
+            <h2>Daftar Dosen</h2>
+            <ul id="dosenList">
+                <!-- Daftar dosen akan ditampilkan di sini -->
+            </ul>
+        </div>
+    </main>
+    <div class="form-container">
+        <form id="dataForm">
+            <h2>Tambah Data</h2>
+            <label for="dataType">Jenis Data:</label>
+            <select id="dataType">
+                <option value="mataKuliah">Mata Kuliah</option>
+                <option value="mahasiswa">Mahasiswa</option>
+                <option value="dosen">Dosen</option>
+            </select>
+            <label for="dataName">Nama:</label>
+            <input type="text" id="dataName" required>
+            <button type="submit">Tambah</button>
+        </form>
+    </div>
+</div>
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Edit Data</h2>
+        <input type="text" id="editDataInput">
+        <button id="editDataButton" class="button edit-button">Simpan Perubahan</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
